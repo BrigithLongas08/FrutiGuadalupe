@@ -7,9 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
-
-=======
 Route::get('/quienes_somos', function () {
     return view('pages.quienes-somos');
 })->name('quienes-somos');
@@ -21,7 +18,6 @@ Route::get('/inicio', function () {
 Route::get('/productos', function () {
     return view('pages.productos');
 })->name('Productos');
->>>>>>> origin/brigith
 
 
 Route::get('/dashboard', function () {
@@ -35,5 +31,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
-#rutas
