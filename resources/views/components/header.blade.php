@@ -26,14 +26,10 @@
         background-color: white;
         color: #166534;
         border-color: #14532d;
+        
     }
 
-    /* Clase personalizada extra */
-    .hola {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #ff4d4d; /* rojo suave */
-    }
+
 </style>
 <header>
     @if (Route::has('login'))
