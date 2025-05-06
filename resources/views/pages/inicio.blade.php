@@ -4,25 +4,7 @@
     <!-- Encabezado principal -->
     <header class="bg-green-100 shadow p-4">
         <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <a href="/">
-                    <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-10 w-auto">
-                </a>
-                <span class="text-xl font-bold">FRUTI-GUADALUPE</span>
-            </div>
-
-            <!-- Búsqueda -->
-            <form action="#" method="get" class="flex items-center space-x-2">
-                <input type="text" name="buscar" placeholder="Buscar..."
-                       class="border rounded px-3 py-1 focus:outline-none focus:ring focus:border-blue-300">
-                <button type="submit"
-                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded">
-                    Buscar
-                </button>
-            </form>
-        </div>
-
+          
      
 
     <!-- Sección de Bienvenida -->

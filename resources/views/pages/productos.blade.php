@@ -4,20 +4,7 @@
     
 <!-- Encabezado principal -->
 <header class="encabezado">
-    <!-- Logo o nombre -->
-    <div class="logo">
-      <a href="/"><img src="IMG/logo.png" alt="FrutiGuadalupe"></a>
-      <span>FRUTI-GUADALUPE</span>
-    </div>
-    <!-- Formulario de búsqueda -->
-    <form id="formularioBusqueda">
-      <div class="barra-busqueda">
-        <input type="text" id="buscar" name="buscar" placeholder="Buscar..." required>
-        <button type="submit">Buscar</button>
-      </div>
-    </form>
-</form>
-   
+    
     
   <!-- Sección Inicio -->
 
