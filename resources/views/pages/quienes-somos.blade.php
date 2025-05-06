@@ -1,14 +1,137 @@
 @extends('welcome')
 @section('title', 'Quienes somos?')
 @section('content')
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FrutiGuadalupe</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+
+<style>
+
+@media (max-width: 768px) {
+  .hero, .nosotros, .testimonios, .pie-pagina {
+    padding: 20px;
+  }
+}
+
+
+
+/* Sección HERO */
+.hero {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.hero h2 {
+  font-size: 1.2em;
+  color: #0e0d0d;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+/* Contenedor flexible para Misión y Visión */
+.mision-vision {
+  display: flex;  /* Organiza en fila */
+  justify-content: space-between;  /* Separa los elementos */
+  align-items: center;  /* Alinea verticalmente */
+  max-width: 900px;
+  margin: 50px auto;
+  gap: 20px;  /* Espacio entre los bloques */
+}
+
+
+/* Efecto de movimiento al pasar el mouse */
+.mision img, .vision img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+/* Movimiento cuando pasas el cursor */
+.mision img:hover, .vision img:hover {
+  transform: translateY(-10px); /* Mueve la imagen hacia arriba */
+}
+
+/* Texto dentro de Misión y Visión */
+.mision p, .vision p {
+  font-size: 1.2em;
+  color: #141414;
+  margin-top: 10px;
+}
+.mision h1, .vision h1 {
+  font-size: 3em;
+  color: #3fb80f;
+  margin-top: 0;
+  margin: 20px;
+}
+
+/* Sección de testimonios */
+.testimonios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada testimonio */
+.testimonio {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.testimonio cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-style: italic;
+  color: #333;
+}
+
+.iconos-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre los iconos */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.iconos-sociales a {
+  display: inline-block;
+}
+
+.iconos-sociales img {
+  width: 40px; /* Ajusta el tamaño de los iconos */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.iconos-sociales img:hover {
+  transform: scale(1.1); /* Efecto de hover */
+}
+
+
+
+</style>
+
+
+
+
 
   <div>
         
