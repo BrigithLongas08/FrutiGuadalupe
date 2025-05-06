@@ -1,40 +1,7 @@
 @extends('welcome')
 @section('title', 'Inicio')
 @section('content')
-    <!-- Encabezado principal -->
-    <header class="bg-green-100 shadow p-4">
-        <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <a href="/">
-                    <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-10 w-auto">
-                </a>
-                <span class="text-xl font-bold">FRUTI-GUADALUPE</span>
-            </div>
-
-            <!-- Búsqueda -->
-            <form action="#" method="get" class="flex items-center space-x-2">
-                <input type="text" name="buscar" placeholder="Buscar..."
-                       class="border rounded px-3 py-1 focus:outline-none focus:ring focus:border-blue-300">
-                <button type="submit"
-                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded">
-                    Buscar
-                </button>
-            </form>
-        </div>
-
-        <!-- Navegación -->
-        <nav class="mt-4">
-            <ul class="flex space-x-6 justify-center font-medium text-green-800">
-                <li><a href="#" class="hover:text-green-600">Inicio</a></li>
-                <li><a href="#" class="hover:text-green-600">Productos</a></li>
-                <li><a href="#" class="hover:text-green-600">Quiénes somos</a></li>
-                <li><a href="#" class="hover:text-green-600">Iniciar sesión</a></li>
-                <li><a href="#" class="hover:text-green-600">Registrarse</a></li>
-            </ul>
-        </nav>
-    </header>
-
+   
     <!-- Sección de Bienvenida -->
     <section class="my-8 text-center">
         <div class="relative">

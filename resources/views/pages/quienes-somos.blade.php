@@ -14,24 +14,7 @@
         
             <body>
     <!-- Encabezado principal -->
-    <header class="encabezado">
-        <!-- Logo o nombre -->
-        <div class="logo">
-          <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe">
-          <span>FRUTI-GUADALUPE</span>
-        </div>
-      <!-- Formulario de búsqueda -->
-      <form action="#" method="get">
-        <div class="barra-busqueda">
-          <!-- Campo de entrada para la búsqueda -->
-          <input type="text" id="buscar" name="buscar" placeholder="Buscar...">
-          <!-- Botón para enviar la búsqueda -->
-          <button type="submit">Buscar</button>
-        </div>
-      </form>
-      
-        
-    </header>
+  
       
       <!-- Sección Inicio -->
       <!-- Sección HERO (Encabezado) -->
