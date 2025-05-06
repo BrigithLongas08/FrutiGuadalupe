@@ -23,6 +23,7 @@
                     Dashboard
                 </a>
             @else
+<<<<<<< HEAD
                 <a href="{{ route('Furtiguadalupe') }}"
                    class="text-white px-4 py-2 rounded text-sm hover:bg-white hover:text-green-800 transition duration-300">
                     Inicio
@@ -39,6 +40,12 @@
                    class="text-white px-4 py-2 rounded text-sm hover:bg-white hover:text-green-800 transition duration-300">
                     Iniciar sesión
                 </a>
+=======
+                <a href="{{ route('login') }}">Log in</a>
+                <a href="{{ route('quienes-somos') }}">Quienes Somos</a>
+                <a href="{{ route('Furtiguadalupe') }}">Inicio</a>
+                <a href="{{ route('Productos') }}">Productos</a>
+>>>>>>> edb0bedd0707aa24b8a99ed5e5ce1d1f191209e3
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}"
                        class="text-white px-4 py-2 rounded text-sm hover:bg-white hover:text-green-800 transition duration-300">

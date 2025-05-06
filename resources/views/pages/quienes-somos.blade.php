@@ -3,12 +3,16 @@
 @section('content')
 
 <style>
-
-@media (max-width: 768px) {
-  .hero, .nosotros, .testimonios, .pie-pagina {
-    padding: 20px;
-  }
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+.wrapper {
+  max-width: none;
+  margin: 0;
+}
+
 
 
 
