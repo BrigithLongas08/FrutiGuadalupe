@@ -23,17 +23,7 @@
             </form>
         </div>
 
-        <!-- Navegación -->
-        <nav class="mt-4">
-            <ul class="flex space-x-6 justify-center font-medium text-green-800">
-                <li><a href="#" class="hover:text-green-600">Inicio</a></li>
-                <li><a href="#" class="hover:text-green-600">Productos</a></li>
-                <li><a href="#" class="hover:text-green-600">Quiénes somos</a></li>
-                <li><a href="#" class="hover:text-green-600">Iniciar sesión</a></li>
-                <li><a href="#" class="hover:text-green-600">Registrarse</a></li>
-            </ul>
-        </nav>
-    </header>
+     
 
     <!-- Sección de Bienvenida -->
     <section class="my-8 text-center">

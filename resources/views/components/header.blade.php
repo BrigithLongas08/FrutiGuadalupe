@@ -43,7 +43,6 @@
                 <a href="{{ route('quienes-somos') }}">Quienes Somos</a>
                 <a href="{{ route('Furtiguadalupe') }}">Inicio</a>
                 <a href="{{ route('Productos') }}">Productos</a>
-                <a href="#">Blog</a>
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}">Register</a>
                 @endif
