@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title', 'Furtiguadalupe')</title>
+        <title>@yield('title', 'Frutiguadalupe')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -22,7 +22,7 @@
     </head>
 
 
-        <style class = "producto"> 
+<style class = "producto"> 
         
         /* Estilos básicos para el cuerpo de la página */
 body {
@@ -220,7 +220,7 @@ h1, h2, h3, p {
 .pie-pagina .iconos-sociales a img:hover {
     transform: scale(1.1); /* Aumentar ligeramente el tamaño */
 }
-        </style>
+</style>
 
 
 
