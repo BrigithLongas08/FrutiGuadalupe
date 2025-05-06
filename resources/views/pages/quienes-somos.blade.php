@@ -139,8 +139,6 @@ body {
 
   <div>
     
-      
-        
     </header>
       
       <!-- Sección Inicio -->
