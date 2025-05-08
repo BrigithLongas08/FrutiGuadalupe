@@ -3,18 +3,6 @@
 @section('content')
 
 <style>
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.wrapper {
-  max-width: none;
-  margin: 0;
-}
-
-
-
 
 /* Sección HERO */
 .hero {
@@ -129,19 +117,12 @@ body {
   transform: scale(1.1); /* Efecto de hover */
 }
 
-
-
 </style>
 
-
-
-
-
-  <div>
+  <div clas="w-full">
     
     </header>
       
-      <!-- Sección Inicio -->
       <!-- Sección HERO (Encabezado) -->
     <div class="hero">
       <h1>¿Quiénes Somos?</h1>
@@ -203,5 +184,5 @@ body {
       
 
 
-   </div>
+  </div>
 @endsection
