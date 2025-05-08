@@ -17,20 +17,6 @@
             </button>
         </div>
 
-        <!-- Navegación -->
-        <nav id="nav-menu" class="w-full lg:w-auto hidden lg:flex flex-col lg:flex-row gap-3 lg:gap-6 items-center">
-            @auth
-                <a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a>
-            @else
-                <a href="{{ route('Furtiguadalupe') }}" class="nav-link">Inicio</a>
-                <a href="{{ route('quienes-somos') }}" class="nav-link">Quiénes Somos</a>
-                <a href="{{ route('Productos') }}" class="nav-link">Productos</a>
-                <a href="{{ route('login') }}" class="nav-link">Iniciar sesión</a>
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="nav-link">Registrarse</a>
-                @endif
-            @endauth
-        </nav>
 
         <!-- Búsqueda -->
         <form action="#" method="get" class="hidden lg:flex items-center gap-2">
