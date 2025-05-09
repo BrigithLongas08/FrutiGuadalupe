@@ -38,6 +38,13 @@
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
+        <!-- Ciudad -->
+        <div class="mt-4">
+        <x-input-label for="ciudad" :value="'Ciudad'" />
+        <x-text-input id="ciudad" class="block mt-1 w-full" type="text" name="ciudad" :value="old('ciudad')" required />
+        <x-input-error :messages="$errors->get('ciudad')" class="mt-2" />
+        </div>
+
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="{{ route('login') }}">
                 ¿Ya estás registrado?
