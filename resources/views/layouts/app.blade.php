@@ -11,6 +11,9 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-Vo1Wy+4eMaQQY9IlmWD43a4nY8qQDXNnZgoO5jqcqqZCPlr6C9Wj9s3+kMEgPGlJq4GUbC1HHjxWkWwM3gQ7Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])

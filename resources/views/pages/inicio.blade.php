@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Sección de Bienvenida -->
-    <section class="my-8">
+    <section class="my">
         <div class="relative w-full">
             <img src="{{ asset('img/agua.jpeg') }}" alt="Frutas" class="w-full max-h-[500px] object-cover">
             <h1 class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold bg-black bg-opacity-50">
@@ -29,18 +29,19 @@
     </section>
 
     <!-- Pie de página -->
-    <footer class="w-full bg-green-200 py-8 px-4 text-center">
-        <section id="contacto" class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-4 text-green-900">Contáctanos</h2>
-            <p class="mb-2">Email: contact@frutiguadalupe.com</p>
-
-            <div class="flex justify-center gap-6 mt-4">
-                <a href="#"><img src="{{ asset('img/facebook.png') }}" alt="Facebook" class="h-6"></a>
-                <a href="#"><img src="{{ asset('img/Instagram.png') }}" alt="Instagram" class="h-6"></a>
-                <a href="#"><img src="{{ asset('img/tiktok.png') }}" alt="TikTok" class="h-6"></a>
-                <a href="#"><img src="{{ asset('img/whatsapp.png') }}" alt="Whatsapp" class="h-6"></a>
+    <!-- Pie de Página -->
+    <footer class="bg-green-800 text-white py-10">
+        <section id="contacto" class="contacto text-center mb-6">
+            <h2 class="text-2xl font-bold">Contáctanos</h2>
+            <p class="mb-4">Email: contact@frutiguadalupe.com</p>
+            <div class="iconos-sociales flex justify-center items-center gap-6">
+                <a href="#"><img src="IMG/facebook.png" alt="Facebook" class="w-10 transition-transform hover:scale-110"></a>
+                <a href="#"><img src="IMG/Instagram.png" alt="Instagram" class="w-10 transition-transform hover:scale-110"></a>
+                <a href="#"><img src="IMG/tiktok.png" alt="TikTok" class="w-10 transition-transform hover:scale-110"></a>
+                <a href="#"><img src="IMG/whatsapp.png" alt="WhatsApp" class="w-10 transition-transform hover:scale-110"></a>
             </div>
         </section>
-        <p class="mt-4 text-sm">© 2025 FrutiGuadalupe</p>
+        <p class="text-center text-sm">© 2025 FrutiGuadalupe</p>
     </footer>
+
 @endsection

@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-3 gap-4">
         <!-- Logo -->
         <a href="{{ route('Furtiguadalupe') }}" class="flex items-center gap-3">
-            <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-12 w-auto">
+            <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-20 w-auto">
             <span class="text-2xl font-bold tracking-wide">FrutiGuadalupe</span>
         </a>
 
@@ -17,6 +17,20 @@
             </button>
         </div>
 
+        <!-- Navegación -->
+        <nav id="nav-menu" class="w-full lg:w-auto hidden lg:flex flex-col lg:flex-row gap-3 lg:gap-6 items-center">
+            @auth
+                <a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a>
+            @else
+                <a href="{{ route('Furtiguadalupe') }}" class="nav-link">Inicio</a>
+                <a href="{{ route('quienes-somos') }}" class="nav-link">Quiénes Somos</a>
+                <a href="{{ route('Productos') }}" class="nav-link">Productos</a>
+                <a href="{{ route('login') }}" class="nav-link">Iniciar sesión</a>
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="nav-link">Registrarse</a>
+                @endif
+            @endauth
+        </nav>
 
         <!-- Búsqueda -->
         <form action="#" method="get" class="hidden lg:flex items-center gap-2">
@@ -34,6 +48,15 @@
         <input type="text" name="buscar" placeholder="Buscar..."
                class="w-full px-3 py-2 rounded-md text-sm text-black focus:outline-none focus:ring focus:ring-green-300">
     </form>
+
+    <a href="{{ url('/login') }}" 
+   class="fixed bottom-5 right-5 bg-gray-300 text-white p-3 rounded-full shadow-lg hover:bg-gray-200 transition"
+   title="Ir a la tienda">
+    <!-- Imagen aún más grande -->
+    <img src="{{ asset('img/carro.webp') }}" alt="Carrito" class="w-12 h-12" />
+    </a>
+
+
 </header>
 
 <style>
@@ -53,3 +76,4 @@
         });
     });
 </script>
+
