@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('direccion', 150)->nullable();
             $table->string('telefono', 20)->nullable();
             $table->string('password');
-            $table->string('ciudad');
+            $table->string('ciudad')->nullable()->change();
             $table->enum('tipo_usuario', ['cliente', 'administrador'])->default('cliente');
             $table->softDeletes();
             $table->rememberToken();
