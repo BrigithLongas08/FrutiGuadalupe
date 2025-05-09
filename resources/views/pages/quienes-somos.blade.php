@@ -129,20 +129,13 @@ body {
   transform: scale(1.1); /* Efecto de hover */
 }
 
-
-
 </style>
-
-
-
-
-
   <div>
+
         
             <body>
-    <!-- Encabezado principal -->
-  
-      
+    <!-- Encabezado principal --> 
+    </header>  
       <!-- Sección Inicio -->
       <!-- Sección HERO (Encabezado) -->
     <div class="hero">

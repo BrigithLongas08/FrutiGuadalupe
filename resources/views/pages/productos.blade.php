@@ -4,9 +4,7 @@
     
 <!-- Encabezado principal -->
 <header class="encabezado">
-   
-   
-    
+  
   <!-- Sección Inicio -->
 
  
