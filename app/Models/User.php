@@ -2,20 +2,20 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * Atributos asignables masivamente.
      *
-     * @var list<string>
+     * @var array<int, string>
      */
     protected $fillable = [
         'name',
@@ -24,9 +24,9 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
+     * Atributos que deben estar ocultos para los arrays.
      *
-     * @var list<string>
+     * @var array<int, string>
      */
     protected $hidden = [
         'password',
@@ -34,7 +34,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the attributes that should be cast.
+     * Atributos que deben ser convertidos a tipos nativos.
      *
      * @return array<string, string>
      */
@@ -44,5 +44,27 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Determina si el usuario puede acceder al panel de Filament.
+     *
+     * @param  \Filament\Panel  $panel
+     * @return bool
+     */
+    public function canAccessPanel(Panel $panel): bool
+    {
+        // Aquí puedes agregar lógica de roles o permisos para controlar el acceso
+        return true; // Permitir acceso a todos los usuarios
+    }
+
+    /**
+     * Determina si el usuario puede acceder a Filament.
+     *
+     * @return bool
+     */
+    public function canAccessFilament(): bool
+    {
+        return true; // O personaliza según tu lógica
     }
 }

@@ -32,6 +32,10 @@
             </nav>
 
         <!-- Búsqueda -->
+
+
+
+        
         <form action="#" method="get" class="hidden lg:flex items-center gap-2">
             <input type="text" name="buscar" placeholder="Buscar..."
                    class="px-3 py-1 rounded-md text-sm text-black focus:outline-none focus:ring focus:ring-green-300">

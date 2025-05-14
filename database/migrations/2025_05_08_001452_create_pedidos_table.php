@@ -6,29 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id('id_pedido');
-            $table->unsignedBigInteger('id_usuario')->nullable()->index();
+            $table->unsignedBigInteger('user_id')->nullable()->index(); // Relación con 'users.id'
             $table->timestamp('fecha_pedido')->useCurrent();
             $table->enum('estado', ['pendiente', 'enviado', 'entregado', 'cancelado'])->default('pendiente');
             $table->decimal('total', 10, 2)->default(0);
             $table->ipAddress('ip')->nullable();
             $table->timestamps();
             $table->softDeletes();
-        
-            $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('set null');
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
         });
-    
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('pedidos');
