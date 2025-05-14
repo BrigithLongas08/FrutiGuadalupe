@@ -71,6 +71,6 @@
         <p class="text-center text-sm">© 2025 FrutiGuadalupe</p>
     </footer>
 
-</div>
+    </div>
 
 @endsection
