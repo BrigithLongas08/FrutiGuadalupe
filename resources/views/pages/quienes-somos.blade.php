@@ -20,7 +20,7 @@
         <!-- Misión -->
         <div class="text-center">
           <h1 class="text-4xl text-green-600 font-bold mb-4">MISIÓN</h1>
-          <img src="IMG/agua.jpeg" alt="Imagen de Misión"
+          <img src="IMG/vision.jpg" alt="Imagen de Misión"
           class="w-[400px] h-[300px] object-cover rounded-xl mx-auto transition-transform duration-300 hover:-translate-y-2">
           <p class="text-lg text-gray-800 mt-4 max-w-md mx-auto">
           Nuestra misión es promover la producción y comercialización sostenible de frutas, impulsando el desarrollo del sector agrícola y el bienestar de nuestra comunidad.

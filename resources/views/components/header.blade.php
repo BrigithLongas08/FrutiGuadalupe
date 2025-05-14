@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-3 gap-4">
         <!-- Logo -->
         <a href="{{ route('Furtiguadalupe') }}" class="flex items-center gap-3">
-            <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-20 w-auto">
+            <img src="{{ asset('img/logo.png') }}" alt="FrutiGuadalupe" class="h-28 w-auto">
             <span class="text-2xl font-bold tracking-wide">FrutiGuadalupe</span>
         </a>
 
@@ -30,37 +30,32 @@
                     @endif
                 @endauth
             </nav>
+        </div>
 
-        <!-- Búsqueda -->
-
-
-
-        
-        <form action="#" method="get" class="hidden lg:flex items-center gap-2">
-            <input type="text" name="buscar" placeholder="Buscar..."
-                   class="px-3 py-1 rounded-md text-sm text-black focus:outline-none focus:ring focus:ring-green-300">
-            <button type="submit"
-                    class="bg-white text-green-800 px-4 py-1 rounded hover:bg-green-100 transition duration-300">
-                Buscar
+        <!-- Búsqueda (Desktop) -->
+        <form action="#" method="get" class="hidden lg:flex items-center gap-2 bg-transparent rounded-full px-4 py-2">
+            <input type="text" name="buscar" placeholder="Buscar productos..."
+                   class="px-3 py-2 rounded-l-full text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 w-64">
+            <button type="submit" class="bg-blue-100 text-black px-5 py-2 rounded-r-full hover:bg-blue-200 transition duration-300 flex items-center gap-2">
+                <i class="fas fa-search"></i> Buscar
             </button>
         </form>
     </div>
 
     <!-- Búsqueda visible solo en móvil -->
     <form action="#" method="get" class="px-4 mt-3 pb-3 lg:hidden">
-        <input type="text" name="buscar" placeholder="Buscar..."
-               class="w-full px-3 py-2 rounded-md text-sm text-black focus:outline-none focus:ring focus:ring-green-300">
+        <input type="text" name="buscar" placeholder="Buscar productos..."
+               class="w-full px-3 py-2 rounded-md text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300">
     </form>
 
+    <!-- Icono de carrito -->
     <a href="{{ url('/login') }}" 
-   class="fixed bottom-5 right-5 bg-gray-300 text-white p-3 rounded-full shadow-lg hover:bg-gray-200 transition"
-   title="Ir a la tienda">
-    <!-- Imagen aún más grande -->
-    <img src="{{ asset('img/carro.webp') }}" alt="Carrito" class="w-12 h-12" />
+       class="fixed bottom-5 right-5 bg-blue-100 text-white p-3 rounded-full shadow-lg hover:bg-gray-200 transition"
+       title="Ir a la tienda">
+        <img src="{{ asset('img/carro.webp') }}" alt="Carrito" class="w-12 h-12" />
     </a>
-
-
 </header>
+
 
 <style>
     .nav-link {
