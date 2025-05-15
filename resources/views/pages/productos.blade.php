@@ -16,14 +16,14 @@
       <!-- Tarjeta de Producto: Aguacates -->
       <div class="tarjeta-producto">
         <img src="IMG/Agucate.jpg" alt="Aguacate">
-        <h3>Aguacates</h3>
+        <h3>Aguacate Hass y Papelillo</h3>
         <p>Frescos y deliciosos aguacates.</p>
         <button class="boton-comprar">Comprar ahora</button>
       </div>
       <!-- Tarjeta de Producto: Limones -->
       <div class="tarjeta-producto">
         <img src="IMG/Limon.jpg" alt="Limón">
-        <h3>Limones</h3>
+        <h3>Limon tahiti</h3>
         <p>Jugosos y maduros limones.</p>
         <button class="boton-comprar">Comprar ahora</button>
       </div>
@@ -36,7 +36,7 @@
 <!-- Sección de Contacto -->
 <section id="contacto" class="contacto">
     <h2>Contáctanos</h2>
-    <p>Email: contact@frutiguadalupe.com</p>
+    <p>Email: frutiguadalupehuila2024@gmail.com</p>
     <div class="iconos-sociales">
         <a href="#"><img src="IMG/facebook.png" alt="Facebook"></a>
         <a href="#"><img src="IMG/Instagram.png" alt="Instagram"></a>
