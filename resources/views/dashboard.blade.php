@@ -15,3 +15,10 @@
         </div>
     </div>
 </x-app-layout>
+@role('admin')
+    <p>Contenido solo visible para administradores</p>
+@endrole
+
+@can('ver dashboard')
+    <p>Tienes permiso para ver el dashboard</p>
+@endcan

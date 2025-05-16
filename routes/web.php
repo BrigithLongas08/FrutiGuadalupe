@@ -19,6 +19,13 @@ Route::get('/productos', function () {
     return view('pages.productos');
 })->name('Productos');
 
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/admin', function () {
+        return view('admin');
+        return view('admin.dashboard');
+    });
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
